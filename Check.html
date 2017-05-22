@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Smart patient</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" type="text/css" href="css/style.css">
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/form.css">
+
+  
+  
+</head>
+<body data-spy="scroll" data-target=".navbar" data-offset="10" style="background:#fff!important">
+<section id="intro">
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 col-sm-12 col-xs-12 logodiv">
+      <img class="img-responsive" src="img/logo.jpg">
+    </div>
+    
+    </div>
+  </div>
+</section>
+<!-- nav start -->
+<nav class="navbar navbar-default" data-spy="affix" data-offset-top="300">
+    <div class="navbar-header">
+      <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".js-navbar-collapse">
+      <span class="sr-only">Toggle navigation</span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+      <span class="icon-bar"></span>
+    </button>
+   
+  </div>
+  
+  <div class="collapse navbar-collapse js-navbar-collapse">
+    <ul class="nav navbar-nav">
+      
+          <li><a href="app.html">Risk Check</a></li>
+          
+    </ul>
+     <ul class="nav navbar-nav navbar-right">
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">My account <span class="caret"></span></a>
+          <ul class="dropdown-menu" role="menu">
+          <!--added icons-->
+            <li><a href="#"><i class="fa fa-hospital-o">Hospital System</i></a></li>
+            <li class="divider"></li>
+            <li><a href="smart/login.html"><i class="fa fa-user">User Login</i></a></li>
+          </ul>
+        </li>
+        
+      </ul>
+  </div><!-- /.nav-collapse -->
+  </nav>
+<!-- nav end -->
+<section id="check">
+  <form>
+    <table class="table table-striped table-hover">
+          <th>Elements</th>
+          <th>Finding</th>
+          <th>Unit</th>
+          <th>Ref.Range</th>
+          <tr>
+            <td>
+               Hemoglobin
+            </td>
+            <td>
+               <div class="form-group ">
+                <input type="text" class="form-control" name="hemo" placeholder="">
+               </div>
+            </td>
+            <td>Gm%</td>
+            <td><=7%</td>
+          </tr>
+           <tr>
+            <td>
+               Blood Glucose-fasting
+            </td>
+            <td>
+               <div class="form-group ">
+                <input type="text" class="form-control" name="glucosefast" placeholder="glucose on fast">
+               </div>
+            </td>
+            <td>mg/dl</td>
+            <td>70-100</td>
+          </tr>
+           <tr>
+            <td>
+               Blood Glucose-after meal
+            </td>
+            <td>
+               <div class="form-group ">
+                <input type="text" class="form-control" name="glucosemeal" placeholder="2 hrs after meal">
+               </div>
+            </td>
+            <td>mg/dl</td>
+            <td><140</td>
+          </tr>
+           <tr>
+            <td>
+               RBC count
+            </td>
+            <td>
+               <div class="form-group ">
+                <input type="text" class="form-control" name="rbc" placeholder="red blood">
+               </div>
+            </td>
+            <td>mill/cumm</td>
+            <td>M:4.5-6.5 F:4.2-5.5</td>
+          </tr>
+           <tr>
+            <td>
+               Platelets
+            </td>
+            <td>
+               <div class="form-group ">
+                <input type="number" class="form-control" name="Platelets" placeholder="">
+               </div>
+            </td>
+            <td>/cu mm</td>
+            <td>150,000-400,000</td>
+          </tr>             
+        </table>
+        <button type="submit"  class="btn btn-info " onclick="">Submit</button>
+  </form>
+</section>
+<br><br>
+<footer>
+  <div class="container-fluid">
+    <div class="row">
+      <div class="col-md-12 ">
+        <div class="socialmenu">
+          <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 social4"><a href="#"><i class="fa fa-twitter-square " aria-hidden="true"></i></a></div>
+          <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 social2"><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></div>
+          <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 social3"><a href=""><i class="fa fa-youtube-play" aria-hidden="true"></i></a></div>
+          
+          <div class="col-md-3 col-lg-3 col-sm-3 col-xs-3 social1"><a href=""><i class="fa fa-facebook-official" aria-hidden="true"></i></a></div>
+        </div>
+      </div>
+      <div class="clearfix"></div>
+      <div class="footer-selector">
+       <div class="col-md-4 footer1">
+        <h3 class="text-center">Links</h3>
+        <ul>
+          <li>Home</li>
+          <li>About</li>
+          <li>Contact</li>
+          <li>Check</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h3>Quick Contact</h3>
+        <h4>Smart patient</h4>
+        <address>
+          City:KAthmandu, ABC<br>
+          Phone:98797987877
+        </address>
+      </div>
+     
+      <div class="col-md-4">
+      <h3>Know more</h3>
+        logo
+        <p>Warm welcome to Smart patient. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+        tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+        quis nostrud exercitation ullamco laboris nisi </p>
+      </div>
+      </div>
+      <div class="col-md-12 copyright">
+        <p>Designed and built with all the love in the world by Sajan</p>
+        <p>All rights reserved</p>
+      </div>
+    </div>
+  </div>
+</footer>
+</body>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="   js/bootstrap.min.js"></script>
+  <script type="text/javascript">
+   $(document).ready(function(){
+    $(".dropdown").hover(            
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideDown("400");
+            $(this).toggleClass('open');        
+        },
+        function() {
+            $('.dropdown-menu', this).not('.in .dropdown-menu').stop(true,true).slideUp("400");
+            $(this).toggleClass('open');       
+        }
+    );
+});
+  </script>
+  <script type="text/javascript">
+    $('#myModal').on('shown.bs.modal', function () {
+  $('#myInput').focus()
+})
+  </script>
+</html>
+

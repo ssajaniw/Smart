@@ -1,0 +1,32 @@
+/*this is css for reg.html only*/
+
+nav{
+	padding: 10px;
+	color: #FFF;
+	background-color: #1abc9c;
+	text-align: center;
+}
+.addPatientForm{
+	width: 60%;
+	display: block;
+	margin: 0px  auto;
+}
+.searchdiv{
+	margin-bottom: 20px;
+}
+.bloodform{
+	margin-top: 30px;
+}
+.oxybtn{
+	border-radius: 0px;
+	padding: 15px;
+	background-color:#e74c3c;
+	font-weight: bolder;
+}
+.oxybtn a{
+	color: white;
+}
+a {
+    color: #337ab7;
+    text-decoration: none;
+}

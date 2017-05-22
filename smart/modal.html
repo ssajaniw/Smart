@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="description" content="">
+    <meta name="author" content="">
+    <link rel="icon" href="zz.ico">
+    <title>Smart Patient</title>
+
+    <!-- Bootstrap -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/portfolio.css">
+    <link href="fonts/css/font-awesome.css" rel="stylesheet" />
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,300,500' rel='stylesheet' type='text/css'>
+    <link rel="stylesheet" href="fonts/css/font-awesome.min.css">
+    <link rel="stylesheet" type="text/css" href="css/animate.css"/>
+    <script type="text/javascript" src="js/wow.js"></script>
+    <script type="text/javascript" src="js/jquery.main.js"></script>
+    <script type="text/javascript" src="js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="js/parallax.js"></script>
+    <script type="text/javascript" src="js/scrollTo.js"></script>
+    <script type="text/javascript" src="js/nicescroll.js"></script>
+  </head>
+<body>
+    <div class="container">
+          <!-- Modal -->
+        <div class="modal fade" id="myModal" role="dialog">
+            <div class="modal-dialog" role="document">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <button type="button" class="close" data-dismiss="modal">&times;</button>
+
+                        <h4>Risk Test</h4>
+                    </div>
+                    <div class="modal-body">
+                     <form method="post" action="">
+            <div id="age_details">
+              <p class='form_head'>User Age Details</p>
+              <p>What is your age</p>
+              <input id="ageopt1" name="age1" type="radio" value="0">0-30<br>
+              <input id="ageopt2" name="age2" type="radio" value="1">30-50<br>
+              <input id="ageopt3" name="age3" type="radio" value="2">50 Above<br>
+
+            </div>
+            <div class="div"></div>
+
+            <div id="account_details">
+              <p class='form_head'>User Activity Details</p>
+              <p>Are you physically active?</p>
+              <input id="ageopt1" name="age1" type="radio" value="0">No<br>
+              <input id="ageopt2" name="age2" type="radio" value="1">Yes<br>
+
+
+            </div>
+            <div class="div"></div>
+
+            <div id="user_details">
+              <p class='form_head'>Family Details</p>
+              <p>Do you have a mother, father, sister or brother with diabetes?</p>
+              <input id="phy" name="phy" type="radio" value="1">YES<br>
+              <input id="opt2" name="option2" type="radio" value="0">NO<br>
+              <br>
+            </div>
+            <div class="div"></div>
+
+
+            <div id="pressure_detail">
+              <p class='form_head'>About Blood Pressure</p>
+              <p>Have you ever been diagnosed with high blood pressure?</p>
+              <input id="phy" name="phy" type="radio" value="1">YES<br>
+              <input id="opt2" name="option2" type="radio" value="0">NO<br>
+            <br>
+            </div>
+            <div class="div"></div>
+
+            <div id="body_weight">
+              <p class='form_head'>About Body weight</p>
+              <p>How you measure your body weight?</p>
+              <input id="phy" name="phy" type="radio" value="0">Low<br>
+              <input id="opt2" name="option2" type="radio" value="0">Average<br>
+              <input id="opt2" name="option2" type="radio" value="1">High<br>
+              <br>
+
+            </div>
+            <div class="div"></div>
+
+            <div id="thirsty">
+              <p class='form_head'>Thirst & Hunger</p>
+              <p>How often you feel thirsty and hungry?</p>
+              <input id="phy" name="phy" type="radio" value="1">Maximum<br>
+              <input id="opt2" name="option2" type="radio" value="0">its normal<br>
+
+            </div>
+
+            </form>
+
+                    </div>
+                        <div class="modal-footer">
+                        <input type="Submit" class="btn btn-success" value="Submit">
+                        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                        <button type="button" class="btn btn-primary">Save changes</button>
+                        </div>
+                </div>
+            </div>    
+
+        </div>
+    </div>
+<script>
+    $(document).ready(function(){
+       
+        $("#myModal").modal();
+
+    });
+</script>
+
+
+      <script type="text/javascript">
+      function show_next(id,nextid,bar)
+      {
+      var ele=document.getElementById(id).getElementsByTagName("input");
+      var error=0;
+      for(var i=0;i<ele.length;i++)
+      {
+      if(ele[i].type=="text" && ele[i].value=="")
+      {
+      error++;
+      }
+      }
+
+      if(error==0)
+      { 
+      document.getElementById("body_weight").style.display="none";
+      document.getElementById("thirsty").style.display="none";
+      document.getElementById("age_details").style.display="none";
+      document.getElementById("account_details").style.display="none";
+      document.getElementById("user_details").style.display="none";
+      document.getElementById("pressure_detail").style.display="none";
+      $("#"+nextid).fadeIn();
+      document.getElementById(bar).style.backgroundColor="#38610B";
+      }
+      else
+      {
+      alert("Fill All The details");
+      }
+      }
+
+      function show_prev(previd,bar)
+      {
+      document.getElementById("body_weight").style.display="none";
+      document.getElementById("thirsty").style.display="none";
+      document.getElementById("age_details").style.display="none";
+      document.getElementById("account_details").style.display="none";
+      document.getElementById("user_details").style.display="none";
+      document.getElementById("pressure_detail").style.display="none";
+      $("#"+previd).fadeIn();
+      document.getElementById(bar).style.backgroundColor="#D8D8D8";
+      }
+      </script>
+
+</body>
+</html>
